@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Open_Sans as FontSans } from "next/font/google";
 import "./globals.css";
-import LayoutClient from "@/components/LayoutClient";
 const fontSans = FontSans({
 	subsets: ["latin"],
 	variable: "--font-sans",
@@ -55,7 +54,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning>
-			<LayoutClient>
+			<>
 				<body
 					className={cn(
 						"min-h-screen bg-background antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6"
@@ -67,7 +66,7 @@ export default function RootLayout({
 						</TooltipProvider>
 					</ThemeProvider>
 				</body>
-			</LayoutClient>
+			</>
 		</html>
 	);
 }
