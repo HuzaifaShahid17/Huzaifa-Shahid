@@ -54,6 +54,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning>
+			<Head>
+			<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+			</Head>
 			<>
 				<body
 					className={cn(
